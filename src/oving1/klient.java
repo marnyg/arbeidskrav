@@ -11,30 +11,45 @@ public class klient {
       int valg=0;
 
 
-      try {
-          int oppAr = Integer.parseInt(showInputDialog(null, "Oppstarts ar?"));
-          int antBord = Integer.parseInt(showInputDialog(null, "antall bord?"));
-          String navn = showInputDialog(null, "navnet?");
-          rest = new Resturant(oppAr, navn, antBord);
-      }catch (Exception e){System.out.print("det virker ikke");}
+      boolean ok = false;
+      while (!ok) {
+          try {
+              int oppAr = Integer.parseInt(showInputDialog(null, "Oppstarts ar?"));
+              int antBord = Integer.parseInt(showInputDialog(null, "antall bord?"));
+              String navn = showInputDialog(null, "navnet?");
+              rest = new Resturant(oppAr, navn, antBord);
+              ok =true;
 
+          } catch (Exception e) {
+              showMessageDialog(null,"noe gikk galt prov igjen");
+          }
+      }
       do{
-          System.out.println("asdasd");
-          System.out.println("asdasd");
-          //showInputDialog();
-
           valg =showOptionDialog(null, "hva vil du gjore","meny",YES_NO_CANCEL_OPTION,ERROR_MESSAGE,null,muligheter,null);
           switch (valg){
               case INFO:
                   showMessageDialog(null,rest);
                   break;
+
+
               case RESERVER:
-                  if(rest.reserverBord(showInputDialog(null,"navn"),Integer.valueOf(showInputDialog(null, "hvilket bord")).intValue())){
-                      showMessageDialog(null,"suksess");
-                      break;
+
+                  int bordnr =-1;
+                  while (bordnr ==-1){
+                  try{
+                  bordnr =Integer.valueOf(showInputDialog(null, "hvilket bord")).intValue();
+                  }catch (Exception e){
+                      showMessageDialog(null,"noe gikk galt prov igjen");
                   }
-                  showMessageDialog(null,"nope");
+                  }
+
+                  while (!rest.reserverBord(showInputDialog(null,"navn"),bordnr)){
+                      showMessageDialog(null,"noe gikk galt prov igjen");
+                  }
+                      showMessageDialog(null,"suksess");
                   break;
+
+
               case FINNBORD:
                   int[] bord=rest.finnReservertBord(showInputDialog(null,"navn?"));
                   String asd="";
@@ -44,13 +59,19 @@ public class klient {
                   }
                   showMessageDialog(null,asd);
                   break;
+
+
               case FRIGJORBORD:
-                  if(rest.frigjorBord(showInputDialog(null,"hvem vill du frigjore"))){
+                  if(rest.frigjorBord(showInputDialog(null,"navnet til bord reservatoren"))){
                       showMessageDialog(null,"suksess");
                       break;
                   }
-                  showMessageDialog(null,"nope");
+                  showMessageDialog(null,"nope, prov igjen");
                   break;
+
+
+              default:
+                  valg=AVSLUTT;
           }
       }while(valg!=AVSLUTT);
   }

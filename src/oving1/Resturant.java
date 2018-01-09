@@ -50,8 +50,8 @@ public class Resturant {
 
 
     public String toString() {
-        String txt="";
-        txt+=getNavn()+"\ner"+getAlde()+" Ar gammel\nVar Oppretta i " +getOpprettingsAr();
+        String txt="Navn: ";
+        txt+=getNavn()+"\nAlder: "+getAlde()+" år\nOppretta i: " +getOpprettingsAr();
         return txt;
     }
 }
