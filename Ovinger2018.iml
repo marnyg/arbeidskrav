@@ -9,6 +9,11 @@
       <sourceFolder url="file://$MODULE_DIR$/src/oving2" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/oving2/tabell" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/oving2/ArrayList" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/oving3/ArrayList" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/oving3/tabell" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Oving4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Oving5" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Oving6" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
