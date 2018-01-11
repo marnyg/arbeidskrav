@@ -49,7 +49,6 @@ public class klient {
                       showMessageDialog(null,"suksess");
                   break;
 
-
               case FINNBORD:
                   int[] bord=rest.finnReservertBord(showInputDialog(null,"navn?"));
                   String asd="";

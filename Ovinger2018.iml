@@ -7,6 +7,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src/oving1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/oving3" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/oving2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/oving2/tabell" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/oving2/ArrayList" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
