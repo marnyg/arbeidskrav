@@ -2,19 +2,19 @@ public class Student {
     private final String navn;
     private int antOppg;
 
-    public Student(String navn){
+    Student(String navn){
         this.navn=navn;
     }
 
-    public String getNavn() {
+    String getNavn() {
         return navn;
     }
 
-    public int getAntOppg() {
+    int getAntOppg() {
         return antOppg;
     }
 
-    public void setAntOppg(int antOppg) {
+    void setAntOppg(int antOppg) {
         if (antOppg<0){
             throw new IllegalArgumentException("argumentet i setAntOppg() kan ikke vere negativt");
         }
