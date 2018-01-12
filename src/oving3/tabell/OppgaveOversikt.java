@@ -30,7 +30,8 @@ public class OppgaveOversikt {
         if(finnStudent(navn)==-1){
             return false;
         }
-        studenter[finnStudent(navn)].setAntOppg(studenter[finnStudent(navn)].getAntOppg()+ant);
+        int antOppg = studenter[finnStudent(navn)].getAntOppg() + ant;
+        studenter[finnStudent(navn)].setAntOppg(antOppg);
         return true;
     }
     public String[] finnAlleNavn(){
