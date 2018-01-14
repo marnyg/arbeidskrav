@@ -51,7 +51,7 @@ class Reservasjon {
 
     public String toString() {
         return "Kunde: " + kunde.getNavn() + ", tlf: " + kunde.getTlf() + ", fra " +
-                fraTid.toString() + ", til " + tilTid.toString();
+                fraTid.toString() + ", til " + tilTid.toString()+"\n";
     }
 
     /**

@@ -25,7 +25,7 @@ public class OppgaveOversiktv2 {
         if (finnStudent(navn)==-1){
             return -1;
         }
-        return studenter.get(finnStudent(navn)).getAntOppg();//todo finnStud returnerer int?
+        return studenter.get(finnStudent(navn)).getAntOppg();
     }
 
     public boolean økAntOppg(String navn, int ant){
