@@ -1,10 +1,11 @@
+package Oving4;
 import com.sun.javaws.exceptions.InvalidArgumentException;
 
 import java.io.IOException;
 import java.text.ParseException;
 
 import static javax.swing.JOptionPane.*;
-public class Klient {
+public class KlientO4 {
 
     public static void main(String[] args) {
         Konferansesenter konf = new Konferansesenter();

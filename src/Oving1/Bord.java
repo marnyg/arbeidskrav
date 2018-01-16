@@ -1,3 +1,5 @@
+package Oving1;
+
 public class Bord {
     private String[] borene;
     private int antallBord;

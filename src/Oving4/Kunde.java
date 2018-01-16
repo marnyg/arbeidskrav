@@ -1,3 +1,5 @@
+
+package Oving4;
 /**
  * Kunde.java
  * Inneholder kundedata.

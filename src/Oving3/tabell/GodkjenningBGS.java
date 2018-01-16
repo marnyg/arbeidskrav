@@ -1,4 +1,4 @@
-
+package Oving3.tabell;
 import static javax.swing.JOptionPane.*;
 
 /**

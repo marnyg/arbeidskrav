@@ -1,3 +1,5 @@
+package Oving3.ArrayList;
+
 import java.util.ArrayList;
 
 public class OppgaveOversiktv2 {
@@ -10,9 +12,9 @@ public class OppgaveOversiktv2 {
 //           if (antStud==studenter.size()){
 //               utivdTab();
 //           }
-           studenter.add(new Student(navn));
-           antStud++;
-           return true;
+            studenter.add(new Student(navn));
+            antStud++;
+            return true;
         }
         return false;
     }
@@ -54,7 +56,7 @@ public class OppgaveOversiktv2 {
         }
         return -1;
     }
-//    private void utivdTab(){
+    //    private void utivdTab(){
 //        Student[] nyTab = new Student[studenter.size()+5];
 //        for (int i = 0; i < studenter.size() ; i++) {
 //            nyTab[i]=studenter[i];

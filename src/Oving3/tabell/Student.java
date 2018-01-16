@@ -1,3 +1,5 @@
+package Oving3.tabell;
+
 public class Student {
     private final String navn;
     private int antOppg;

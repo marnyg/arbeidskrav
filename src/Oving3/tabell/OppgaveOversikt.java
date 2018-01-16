@@ -1,3 +1,5 @@
+package Oving3.tabell;
+
 public class OppgaveOversikt {
     private Student[] studenter = new Student[5];
     private int antStud = 0;
@@ -5,12 +7,12 @@ public class OppgaveOversikt {
 
     boolean regNyStudent(String navn){
         if (!eksisterer(navn)) {
-           if (antStud==studenter.length){
-               utivdTab();
-           }
-           studenter[antStud]=new Student(navn);
-           antStud++;
-           return true;
+            if (antStud==studenter.length){
+                utivdTab();
+            }
+            studenter[antStud]=new Student(navn);
+            antStud++;
+            return true;
         }
         return false;
     }

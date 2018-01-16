@@ -1,3 +1,5 @@
+package Oving1;
+
 import static javax.swing.JOptionPane.*;
 public class klient {
   public static void main(String[] args){

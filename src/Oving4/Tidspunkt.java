@@ -1,3 +1,5 @@
+
+package Oving4;
 /**
  * Tidspunkt.java
  *

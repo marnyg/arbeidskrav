@@ -1,8 +1,10 @@
-public class Studentv2 {
+package Oving3.ArrayList;
+
+public class Student {
     private final String navn;
     private int antOppg;
 
-    public Studentv2(String navn){
+    public Student(String navn){
         this.navn=navn;
     }
 

@@ -1,4 +1,8 @@
+package Oving1;
+
 import java.util.Calendar;
+
+
 
 public class Resturant {
     private int opprettingsAr;

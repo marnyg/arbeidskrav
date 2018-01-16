@@ -1,4 +1,7 @@
+
+package Oving4;
 /**
+ *
  * Resevasjon.java
  *
  * Et objekt inneholder data om en reservasjon.
