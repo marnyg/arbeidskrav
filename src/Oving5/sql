@@ -1,0 +1,10 @@
+
+
+
+borettslag(__boretslag_ID__, navn, adresse,etabelringsAAr)
+
+bygning(__bygning_id__,etasjer,addresse,boretslag*)
+
+leilighet(__leilighet_id__,antRom,kvadratmeter,bygning*)
+
+andelseiger(__ID__, navn,leilighet*)
