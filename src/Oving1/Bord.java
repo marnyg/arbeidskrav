@@ -4,7 +4,7 @@ public class Bord {
     private String[] borene;
     private int antallBord;
 
-    public Bord(int antall){
+    Bord(int antall){
         borene = new String[antall];
         antallBord=antall;
     }
