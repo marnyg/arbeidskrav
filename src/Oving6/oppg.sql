@@ -11,6 +11,6 @@ CREATE TABLE oppdrag(
   oppdragsNR INTEGER NOT NULL AUTO_INCREMENT,
   bedriftNavn VARCHAR(30),
   startdato DATE,
-  sluttdato DATE,
+  sluttdato DATE
 
 )

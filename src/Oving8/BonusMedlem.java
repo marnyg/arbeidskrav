@@ -1,6 +1,7 @@
 package Oving8;
 import java.sql.Time;
 import java.time.LocalDate;
+import java.time.*;
 import java.time.Period;
 import java.time.temporal.TemporalUnit;
 import java.util.List;
@@ -21,7 +22,6 @@ public class BonusMedlem {
         this.pers = pers;
         this.medlNr = medlNr;
     }
-
     public int getMedlNr() {
         return medlNr;
     }
@@ -35,11 +35,9 @@ public class BonusMedlem {
         return pers;
 
     }
-
     public void setPoeng(int poeng) {
         this.poeng = poeng;
     }
-
     public int finnKvalPoeng(LocalDate dato){
         long dager = DAYS.between(innmeldtDato,dato);
         if(dager<365){
@@ -60,6 +58,11 @@ public class BonusMedlem {
         }
         poeng+=addPoeng;
         return true;
+    }
+    @Override
+    public String toString() {
+        String txt = "mdlNr: "+medlNr+ " pers: "+ pers.getFornavn()+ " innDato: "+innmeldtDato + " pong: "+poeng;
+        return txt;
     }
 
     static class TestBonusmedlem {
