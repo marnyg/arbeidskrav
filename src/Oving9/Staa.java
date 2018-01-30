@@ -33,4 +33,28 @@ public class Staa extends Tribune {
                 "antSolgteBilletter=" + antSolgteBilletter +
                 '}';
     }
+
+    @Override
+    public Billett[] kjopBillet(String[] navn) {
+        Billett[] biletter = new Billett[navn.length];
+        for (int i = 0; i < navn.length; i++) {
+            StaaplassBillett temp = new StaaplassBillett(getTribunenavn(),getPris());
+            biletter[i]=temp;
+        }
+        antSolgteBilletter+=navn.length;
+        return biletter;
+    }
+
+    @Override
+    public Billett[] kjopBillet(int antBiletter) {
+        Billett[] biletter = new Billett[antBiletter];
+        for (int i = 0; i <antBiletter; i++) {
+            StaaplassBillett temp = new StaaplassBillett(getTribunenavn(),getPris());
+            biletter[i]=temp;
+        }
+        antSolgteBilletter+=antBiletter;
+        return biletter;
+    }
+
+
 }

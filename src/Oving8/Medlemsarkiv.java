@@ -47,7 +47,8 @@ public class Medlemsarkiv {
                     eksisterer=true;
                 }
             }
-        }while (eksisterer==true);
+
+        }while (eksisterer);
         return muligtall;
 
     }

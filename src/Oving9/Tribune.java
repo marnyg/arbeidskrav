@@ -1,8 +1,9 @@
 package Oving9;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public abstract class Tribune {
+public abstract class Tribune implements Comparable<Tribune>, Serializable {
     private final String tribunenavn;
     private final int kapasitet;
     private final int pris;
@@ -15,13 +16,11 @@ public abstract class Tribune {
                 ", pris=" + pris +
                 '}';
     }
-
     public Tribune(String tribunenavn, int kapasitet, int pris) {
         this.tribunenavn = tribunenavn;
         this.kapasitet = kapasitet;
         this.pris = pris;
     }
-
     public String getTribunenavn() {
         return tribunenavn;
     }
@@ -31,9 +30,16 @@ public abstract class Tribune {
     public int getPris() {
         return pris;
     }
-
-
-
     public abstract int finnAntallSolgteBilletter();
     public abstract int finnInntekt();
+
+
+    public abstract Billett[] kjopBillet(int antBiletter);
+    public abstract Billett[] kjopBillet(String[] navn);
+
+    @Override
+    public int compareTo(Tribune ob) {
+       // Tribune ob =(Tribune) o;
+        return ob.finnInntekt()-finnInntekt();
+    }
 }

@@ -11,4 +11,5 @@ SELECT Kandidat.kandidatID,Fornavn,Etternavn, kvalifikasjon FROM Kandidat,kvalif
 SELECT Kandidat.kandidatID,Fornavn,Etternavn, kvalifikasjon from Kandidat LEFT JOIN kvalifikasjon ON Kandidat.kandidatID = kvalifikasjon.kandidatID;
 
 #5
-SELECT Fornavn,Etternavn,sluttdato,oppdrag,navn FROM historik,Kandidat,Bedrift WHERE KandidatID=3 and historik.kandidat=Kandidat.kandidatID and Bedrift.organisasjonNr=historik.oppdrag;
+SELECT Fornavn,Etternavn,sluttdato,oppdrag,navn FROM historik,Kandidat,Bedrift WHERE KandidatID=3 and historik.kandidat=Kandidat.kandidatID and =historik.oppdrag;
+

@@ -71,4 +71,5 @@ class SitteplassBillett extends Billett {
         res += " Rad: "+ rad + " Plass: " + plass;
         return res;
     }
+
 }
